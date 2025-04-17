@@ -1,49 +1,16 @@
-### موضوع تمرین:
-در این تمرین، شما باید متدهای موجود در کلاس `FileManager` را تکمیل کنید تا قابلیت‌های "باز کردن فایل"، "ذخیره فایل" و "ایجاد فایل جدید" را در ویرایشگر متن ساده پیاده‌سازی نمایید.
+FileManager for Text Editor
+This project implements a FileManager class to handle file operations (open, save, and create new) for a simple text editor.
 
----
+Features
+Open File: Opens an existing file and loads its content into the editor.
 
-### مسیر فایل:
-```java
-src/editor/FileManager.java
-```
+Save File: Saves the editor's content to a file.
 
+New File: Clears the editor and allows the user to create a new file.
 
----
+Methods
+openFile(): Opens a file and loads its content into the editor.
 
-### توضیحات متدها:
+saveFile(): Saves the current editor content to a file.
 
-#### openFile
-این متد مسئول باز کردن یک فایل متنی از سیستم کاربر است. با فراخوانی این متد، پنجره‌ای برای انتخاب فایل ظاهر می‌شود. پس از انتخاب فایل، محتوای آن باید در ویرایشگر نمایش داده شود.
-
----
-
-#### saveFile
-این متد برای ذخیره‌سازی محتوای فعلی ویرایشگر استفاده می‌شود. کاربر محل ذخیره‌سازی فایل را انتخاب می‌کند و محتوای موجود در `JTextArea` باید در فایل انتخاب‌شده ذخیره شود.
-
----
-
-#### newFile
-این متد برای ایجاد یک فایل جدید طراحی شده است. با فراخوانی آن، محتوای فعلی ویرایشگر باید پاک شود و کاربر بتواند متن جدیدی بنویسد.
-
----
-### نکات تکمیلی 
-
-- اگر کاربر فایلی را باز کند، فایل در فیلد currentFile ابجکت textEditor ذخیره می‌شود.
-
-- اگر کاربر بخواهد فایل را ذخیره کند، در صورتی که currentFile مقدار داشته باشد، مستقیماً روی همان فایل ذخیره می‌شود و نیازی به انتخاب مجدد مسیر نیست.
-
-- همچنین دقت کنید هنگام اجرای متدهای openFile و newFile فیلد currentFile را به‌درستی به‌روزرسانی کنید.
-
----
-### نحوه دریافت پروژه:
-
-برای انجام این تمرین، شما باید ریپو پروژه را فورک کنید.
-
-لینک ریپو پروژه:  
-`https://github.com/ap-java-aut/text-editor`
-
-راهنمای فورک کردن پروژه در گیت‌هاب:  
-`https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo`
-
-پس از اتمام پروژه لینک ریپو خودتون را توی یک فایل txt آپلود کنید.
+newFile(): Clears the editor to start a new file.
